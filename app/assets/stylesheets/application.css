@@ -12,4 +12,53 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.task input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+.task span {
+  font-size: 1.2em;
+}
+
+.task-details {
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.trash-icon {
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}

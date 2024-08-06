@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Details</h1>
+  <div class="cards">
+    <span class="task-details"><%= @task.details %></span>
+      <%= link_to 'tasks', tasks_path, class: 'btn btn-success'  %>
+      <p>
+      <% if @task.completed%>
+      <%= "Task completed" %>
+      <% else %>
+      <%= "Task is not completed" %>
+      <% end %>
+      </p>
+  <% end %>
+  </div>
+</div>
